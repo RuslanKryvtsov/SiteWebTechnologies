@@ -1,0 +1,55 @@
+.auth-form {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px; /* Налаштуйте максимальну ширину форми за потребою */
+  margin: auto; /* Центруємо форму на сторінці */
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.top-left-button {
+  position: relative;
+}
+
+.top-left-button input[type="radio"] {
+  display: none;
+}
+
+.top-left-button::before {
+  content: attr(data-label);
+  display: block;
+  width: 100px; /* або інший бажаний розмір */
+  padding: 10px;
+  background-color: #E1ECF3;
+  border: 1px solid #5B493B;
+  cursor: pointer;
+}
+
+.top-left-button input[type="radio"]:checked + ::before {
+  background-color: #BAC8D3; /* темніший фон при виборі */
+}
+
+#infoPopup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* напівпрозорий фон для модального вікна */
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%; /* обмеження ширини тексту */
+  padding: 20px;
+  background-color: #BAC8D3; /* темніший фон для текстового блоку */
+  color: #fff; /* колір тексту */
+}

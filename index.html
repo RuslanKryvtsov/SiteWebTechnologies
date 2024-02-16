@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site concerning web development technologies</title>
+  <!--<link rel="stylesheet" href="styles.css">  Підключення файлу стилів -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    
+   <nav style="display: inline; height: 3cm; color: rgba(138, 206, 28, 0.849); width: 100%; margin-top: 10px;"> 
+  
+   
+
+    <!-- Віджет з випадаючим підменю -->
+    <div class="dropdown" style="float: right; position: relative; margin-top: 10px;">
+        <a href="#" onclick="toggleVerticalMenu()">Web development</a>
+        <div class="dropdown-content" style="display: none; position: absolute; top: 65%; left: 0; width: 100%; background-color: gray;">
+            <a href="#">Пункт 1</a>
+            <a href="#">Пункт 2</a>
+            <a href="#">Пункт 3</a>
+            <a href="#">Пункт 4</a>
+            <a href="#">Пункт 5</a>
+            <a href="#">Пункт 6</a>
+            <a href="#">Пункт 7</a>
+        </div>
+    </div>
+  </nav>
+   
+
+
+<script>
+  function toggleVerticalMenu() {
+        var verticalMenu = document.querySelector(".dropdown-content");
+        verticalMenu.style.display = (verticalMenu.style.display === "none" || verticalMenu.style.display === "") ? "block" : "none";
+    }
+</script>
+
+    <br> 
+    <!-- Назва веб сторінки, а також посилання на соціальні медіа -->
+
+<h2 class="heading1" style="margin-bottom: 75; margin-top: 150;">
+  <div class="social-media-widget" style="position: absolute; right: 0;">
+    <a href="https://m.facebook.com/login/?locale=uk_UA&refsrc=deprecated/ваша-сторінка-на-Facebook" target="_blank">Facebook</a>
+    <a href="https://twitter.com/ваша-сторінка-на-Twitter" target="_blank">Twitter</a>
+        <!-- Додайте інші посилання на інші соціальні мережі, які ви використовуєте -->
+</div>
+<p>
+
+  
+</p>
+<!-- <p>&copy; 2023 Ваша компанія</p>-->
+
+  <!-- radioButtons з модальними вікнами -->
+
+  <div class="button-container" style="font-style: normal; font-weight: bold;  font-size: 0.9em; margin-top: 95px; display: flex;  flex-direction: row;">
+    <label class="top-left-button" data-label="Trends">
+      <input type="radio" name="informationType" value="trends"> 
+    </label>
+    <label class="top-left-button" data-label="Tips" style="margin-right: 2075px;">
+      <input type="radio" name="informationType" value="tips"> 
+    </label>
+  </div>
+
+  <div id="infoPopup" class="modal">
+    <div class="modal-content" style="width: 65%; padding: 20px">
+      <!-- Сюди буде вставлена інформація -->
+    </div>
+ </div>
+
+
+
+<section class="UX" style="margin-bottom: 20px; background-color: rgb(61, 78, 70); margin-top: 85px;"></section>
+<div class="UX">
+<p dir="ltr" style="text-align: justify; font-style: normal; font-weight: bold; color:  rgb(43, 43, 87); font-size: 1.0em;">Юзабіліті сайту – це комплексний термін, який вказує на зручність взаємодії з ресурсом. У це поняття входить дуже багато аспектів, включаючи: інтерфейс, якість контенту, швидкість завантаження сайту 
+  і багато іншого.</p>
+<ul style="border: 1px; border-style: solid; border-color: white; padding: 10px;">
+    
+    <li>
+        <a href="#id2">Принципи юзабіліті сайту:</a>
+        <ul>
+
+            <li>
+                <a href="#id3">Чітка структура</a>
+            </li>
+            <li>
+                <a href="#id4">Зрозуміла навігація</a>
+            </li>
+           <li>
+                <a href="#id6">Висока швидкість завантаження</a>
+            </li>
+            <li>
+                <a href="#id7">Продуманий дизайн</a>
+            </li>
+            <li>
+                <a href="#id8">Якісний контент</a>
+            </li>
+            
+        </ul>
+    </li>
+    <li>
+        <a href="#id10">Які бувають способи юзабіліті тестування?</a>
+    </li>
+</ul>
+
+
+<h3 id="id3" dir="ltr" style="text-align: center;">Чітка структура</h3>
+<p dir="ltr" style="text-align: justify;">Інформація на сайті повинна бути надана у вигляді чітких розділів і блоків. Це дозволить користувачеві зробити потрібну дію (знайти інформацію або зробити замовлення) за мінімальний час. Зараз для створення послідовної структури часто використовують ієрархічну структуру, яка виглядає наступним чином: розділ, категорія, підкатегорія, матеріал або картка товару (якщо мова йде про інтернет-магазин).</p>
+<p dir="ltr" style="text-align: justify;">На usability сайту впливає тематика контенту. Не потрібно навантажувати сайт зайвою інформацією і відхилятися від основного напрямку ресурсу, це тільки зіб &#8217;є з пантелику цільову аудиторію.</p>
+<h3 id="id4" dir="ltr" style="text-align: center;">Зрозуміла навігація</h3>
+<p dir="ltr" style="text-align: justify;">
+    Користувач повинен розуміти, де він знаходиться в даний момент і як повернутися на попередню сторінку. Для цього UI/UX фахівці</a>
+    рекомендують:
+</p>
+<ul>
+    <li dir="ltr" style="text-align: justify;">розмістити на всіх сторінках сайту посилання на головну сторінку;</li>
+    <li dir="ltr" style="text-align: justify;">використовувати так звані «хлібні крихти» – шлях від головної сторінки до тієї, на якій користувач виявився в даний момент;</li>
+    <li dir="ltr" style="text-align: justify;">скласти карту сайту – особливо актуально для великих ресурсів – допомагає швидко зорієнтуватися і знайти потрібний розділ.</li>
+</ul>
+
+<h3 id="id6" dir="ltr" style="text-align: center;">Висока швидкість завантаження</h3>
+<p dir="ltr" style="text-align: justify;">Швидке завантаження сторінок – важливий фактор. Вирішити це завдання можна різними способами: прибрати зайві графічні елементи, видалити анімовані заставки, скоротити кількість рекламних банерів. Головне, щоб ці дії не вплинули на зміст сторінок негативним чином.</p>
+<h3 id="id7" dir="ltr" style="text-align: center;">Продуманий дизайн</h3>
+<p dir="ltr" style="text-align: justify;">Надзвичайно великий і впливовий аспект, який ускладнюється суб &#8217;єктивністю. Те, що подобається одному, не сподобається іншим, тому тут не радять експериментувати. Використання стандартних і мінімалістичних рішень, які не відволікають від основної інформації – це основи юзабіліті.</p>
+<h3 id="id8" dir="ltr" style="text-align: center;">Якісний контент</h3>
+<p dir="ltr" style="text-align: justify;">
+    Інформація – те, навіщо приходять на сайт. Якість контенту має бути на висоті і відповідати вимогам SEO-оптимізації</a>
+    . Щоб домогтися гарних результатів, тексти необхідно: структурувати, використовувати цікаві заголовки, подавати інформацію зрозуміло, ємко і по темі. Важливо також перевіряти публікації на помилки і в розумних кількостях використовувати графічні матеріали.
+</p>
+
+<h2 id="id10" dir="ltr" style="text-align: center;">Які бувають способи юзабіліті тестування?</h2>
+<p dir="ltr" style="text-align: justify;">Аналіз юзабіліті проводиться з двох позицій: якісної і кількісної. У першому випадку ресурс перевіряється на функціональність, якість контенту і стабільну роботу, у другому – час відгуку, швидкість завантаження сторінок, пошуку потрібної інформації і т. д. Раніше ми вже розглянули всі ці параметри.</p>
+<p dir="ltr" style="text-align: justify;">Існують і інші способи перевірки, які необхідно використовувати, якщо ви помітили різке зниження відвідуваності, глибини перегляду, збільшення показника відмов і т. д. Все це вказує на те, що потрібний ретельний аналіз юзабіліті сайту:</p>
+<ul>
+    <li dir="ltr" style="text-align: justify;">дослідження статистики – відстеження активності користувачів, яке проводиться спеціальними інструментами, найпопулярніші з них: Яндекс. Метрика, Google Analytics і Bitrix;</li>
+    <li dir="ltr" style="text-align: justify;">оцінка відгуків відвідувачів – передбачає взаємодію з цільовою аудиторією за допомогою форми зворотного зв &#8217;язку;</li>
+    <li dir="ltr" style="text-align: justify;">тестування через веб-інструменти – використання спеціалізованих сервісів, які перевіряють сайт на помилки;</li>
+    <li dir="ltr" style="text-align: justify;">спостереження за фокус-групою – формування команди аналітиків, які будуть виконувати певні дії, і озвучувати свою думку по темі;</li>
+    <li dir="ltr" style="text-align: justify;">перевірка дій користувачів – спостереження за діями користувача на ресурсі з подальшим аналізом поведінкових факторів.</li>
+</ul>
+
+</div>
+</section>
+
+<section class="React" style="margin-top: 110px; background-color: rgb(61, 78, 70);"></section>
+<div>
+   <p dir="ltr" style="text-align: justify; font-style: normal; font-weight: bold; color:  rgb(43, 43, 87); font-size: 1.0em;">
+    Використання фреймворку React ефективно збалансовує високу якість користувацького досвіду (UX) та відмінний зовнішній вигляд (UI) веб-сайтів. Цей фреймворк дозволяє легко створювати динамічні інтерфейси, сприяючи ефективній взаємодії з користувачем. 
+    Однією з ключових переваг React є можливість швидкого оновлення сторінок без перезавантаження, що значно підвищує зручність використання та створює позитивне враження від взаємодії з сайтом.
+  </p> 
+
+    <ul style="border: 1px; border-style: solid; border-color: white; padding: 10px;">
+        <li>
+            <a href="#id2">Особливості використання фреймворку React для створення UX/UI:</a>
+            <ul>
+              
+                <li>
+                    <a href="#id11">Компоненти</a>
+                </li>
+                <li>
+                    <a href="#id12">Синтаксис розмітки JSX</a>
+                </li>
+                <li>
+                    <a href="#id13">Обробник подій</a>
+                </li>
+                <li>
+                    <a href="#id14">Hooks</a>
+                </li>
+                <li>
+                    <a href="#id15">Створення проекту з необхідними залежностями (https://create-react-app.dev)</a>
+                </li>
+                <li>
+                    <a href="#id16">Використання State, props, а також хуків</a>
+                </li>
+                <li>
+                    <a href="#id17">Концепція функціонального підходу у розробці веб-додатків</a>
+                </li>
+                <li>
+                    <a href="#id18">Віртуальний DOM (Document Object Model)</a>
+                </li>
+    </ul>
+    </li>
+    
+    <h3 id="id11" dir="ltr" style="text-align: center;">Компоненти</h3>
+    <p dir="ltr" style="text-align: justify;">React-програми складаються з компонентів. Компонент - це частина користувацького інтерфейсу (UI), яка має власну логіку та зовнішній вигляд.</p>
+    <p dir="ltr" style="text-align: justify;">Компонент може бути таким малим, як кнопка, або настільки великим, як ціла сторінка. Компоненти React - це функції JavaScript, які повертають розмітку.</p>
+      
+    <h3 id="id12" dir="ltr" style="text-align: center;">Синтаксис розмітки JSX</h3>
+    <p dir="ltr" style="text-align: justify;">2.	Синтаксис розмітки, який ви бачили вище, називається JSX. Він є необов'язковим, але більшість проектів React використовують JSX через його зручність.
+       Всі рекомендовані інструменти для локальної розробки підтримують JSX "з коробки".</p>
+    <p dir="ltr" style="text-align: justify;">JSX строже використовується, ніж HTML. Якщо у вас є багато HTML для перенесення в JSX, ви можете використовувати онлайн-конвертер.</p>
+              
+    <h3 id="id13" dir="ltr" style="text-align: center;">Обробник подій</h3>
+    <p dir="ltr" style="text-align: justify;">Ви можете реагувати на події, оголошуючи функції обробників подій всередині своїх компонентів. Зверніть увагу, що у onClick={handleClick} немає круглих дужок в кінці!</p>  
+    <p dir="ltr" style="text-align: justify;">Не викликайте функцію обробника подій: вам лише потрібно передати її. React викличе ваш обробник подій, коли користувач натисне кнопку.</p>
+      
+    <h3 id="id14" dir="ltr" style="text-align: center;">Hooks</h3>
+    <p dir="ltr" style="text-align: justify;">Функції, що починаються з "use", називаються "хуками" (Hooks). useState - це вбудований хук, який надається React. Інші вбудовані хуки можна знайти у довідці API.</p>
+    <p dir="ltr" style="text-align: justify;">Ви також можете писати свої власні хуки, комбінуючи існуючі. Хуки є більш обмеженими, ніж інші функції.</p>
+    <p dir="ltr" style="text-align: justify;">Ви можете викликати хуки лише у верхній частині ваших компонентів (або інших хуків). Якщо ви хочете використовувати useState в умові або циклі, витягніть новий компонент і розмістіть його там.</p>
+    
+    <h3 id="id15" dir="ltr" style="text-align: center;">Створення проекту з необхідними залежностями (https://create-react-app.dev)</h3>
+    <p dir="ltr" style="text-align: justify;">Вашому додатку потрібен лише один залежний від збірки (https://create-react-app.dev). Під капотом ми використовуємо webpack, Babel, ESLint та інші чудові проекти для підтримки вашого додатка.</p>
+    <p dir="ltr" style="text-align: justify;">Якщо ви коли-небудь захочете продвинуту конфігурацію, ви можете "викинути" з Create React App і редагувати їх конфігураційні файли безпосередньо.</p>
+    <p dir="ltr" style="text-align: justify;">Незалежно від того, чи ви використовуєте React чи іншу бібліотеку, Create React App дозволяє вам фокусуватися на коді, а не на інструментах збірки.</p>
+    <p dir="ltr" style="text-align: justify;">Для створення проекту під назвою "my-app" виконайте цю команду:
+      npx create-react-app my-app6.
+    </p>    
+       
+    <h3 id="id16" dir="ltr" style="text-align: center;">Використання State, props, а також хуків</h3>
+    <p dir="ltr" style="text-align: justify;">State (стан): Це внутрішній стан компонента, який може змінюватися протягом життєвого циклу компонента. Зберігається за допомогою useState хука або за допомогою класового стану. Використовується для 
+      зберігання та оновлення даних, які можуть змінюватися від реакції на події або зміни у програмі.</p>
+    <p dir="ltr" style="text-align: justify;">Props (властивості): Це дані, які передаються в компонент ззовні. Ці дані визначаються в батьківському компоненті та передаються дочірньому компоненту через атрибути. Props використовуються для того, 
+      щоб "налаштувати" компонент, поділитися з ним інформацією чи передати йому функції, які може він викликати.</p>
+    <p dir="ltr" style="text-align: justify;">Хуки та інші функції: useState: Використовується для створення та оновлення стану компонента.</p>
+    <p dir="ltr" style="text-align: justify;">useEffect: Використовується для реагування на зміни у стані чи props компонента, а також для виконання певних дій під час різних етапів життєвого
+       циклу компонента.</p>  
+   <p dir="ltr" style="text-align: justify;">useContext: Дозволяє отримати доступ до значень контексту в компоненті.</p>  
+   <p dir="ltr" style="text-align: justify;">useReducer: Допомагає краще керувати складним станом компонента, особливо коли стан має багато полів.</p>  
+   <p dir="ltr" style="text-align: justify;">useCallback та useMemo: Використовуються для оптимізації продуктивності компонентів, зменшуючи непотрібні перерахування.</p>  
+   <p dir="ltr" style="text-align: justify;">Інтеграція цих концепцій дозволяє React-розробникам створювати ефективні, легко керовані та модульні компоненти для будь-яких веб-додатків.
+   </p>  
+     
+   <h3 id="id17" dir="ltr" style="text-align: center;">Концепція функціонального підходу у розробці веб-додатків</h3>
+    <p dir="ltr" style="text-align: justify;">Об'єкти у програмуванні представляють собою структури даних, які об'єднують властивості і методи в один цілісний елемент. Властивості об'єктів визначають їхні характеристики та стан, в той час як методи реалізують 
+      функціональні можливості. У веб-розробці, особливо у фреймворку React, використовується концепція стану (state) та властивостей (props), які дозволяють ефективно керувати даними та їхнім відображенням. 
+      </p>
+    <p dir="ltr" style="text-align: justify;">У React, "state" визначає динамічний стан компоненту, який може змінюватися впродовж життєвого циклу компонента. Стан визначається в компоненті та може бути змінений за допомогою внутрішніх методів, сприяючи оновленню 
+      відображення компонента в реальному часі. 
+     </p>
+    <p dir="ltr" style="text-align: justify;">"Props" (властивості) є статичними даними, які передаються в компонент як параметри. Вони використовуються для передачі інформації від батьківського компонента до дочірнього. Props надають можливість реюзати компоненти 
+      та забезпечують їх зовнішній інтерфейс.</p>
+    <p dir="ltr" style="text-align: justify;">Для забезпечення функціональності компонентів в React використовуються хуки та функціональні компоненти. Хуки - це функції, які дозволяють використовувати стан та інші можливості React в функціональних компонентах, раніше 
+      обмежених класовими компонентами.</p>  
+   <p dir="ltr" style="text-align: justify;">Функціональні компоненти є простими функціями, які приймають props і повертають JSX для відображення.</p>  
+   <p dir="ltr" style="text-align: justify;">У порівнянні, стан та props доповнюють один одного: стан - для управління динамічними даними в компоненті, а props - для передачі статичних даних від батьківського компонента.</p>  
+   <p dir="ltr" style="text-align: justify;">Хуки та функціональні компоненти в React дозволяють писати більш зручний та ефективний код, спрощуючи розробку та подальше оновлення веб-додатків.</p>  
+   
+   <h3 id="id18" dir="ltr" style="text-align: center;">Віртуальний DOM (Document Object Model)</h3>
+    <p dir="ltr" style="text-align: justify;">це концепція, яка використовується при роботі з інтерфейсами користувача веб-додатків. Замість безпосередньої взаємодії з реальним DOM, який представляє структуру HTML-документа, віртуальний DOM дозволяє фреймворкам та 
+      бібліотекам ефективно маніпулювати інформацією на веб-сторінці.</p>
+    <p dir="ltr" style="text-align: justify;">У фреймворку React використовується підхід з віртуальним DOM. Основна ідея полягає в тому, щоб створювати віртуальне представлення сторінки, яке реагує на зміни даних та стану додатка. При зміні даних React порівнює 
+      віртуальний DOM з реальним DOM та ефективно оновлює тільки ті елементи, які зазнали змін, уникаючи повного перерендерингу сторінки. 
+     </p>
+    <p dir="ltr" style="text-align: justify;">Вплив використання віртуального DOM на веб-розробку, зокрема в контексті single-page applications (односторінкових додатків), величезний. Основні переваги включають покращену продуктивність та відзеркалення змін у 
+      реальному часі без великих витрат ресурсів браузера. Це робить можливим створення більш динамічних та реактивних веб-додатків, забезпечуючи при цьому кращий користувацький досвід.</p>
+   
+   
+   
+   <div id="root"></div>
+    <!-- Підключення бібліотек React -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Підключення вашого скрипту React -->
+    
+   </section>
+
+  <div class="Сomments" style="font-style: normal; font-weight: bold; color: rgb(154, 165, 214); height: 15vh; font-size: 1.0em; display: flex; align-items: center; justify-content: flex-start;">
+    <label for="Сomments">Коментарі:</label>
+    <input type="text" id="Comments" style="margin-right: 10px;">
+
+    <button onclick="submitCommentsForm()" style="font-style: normal; font-weight: bold; font-size: 1em; width: 25%; height: 5vh; background-color: rgba(207, 214, 211, 0.062); color: rgb(64, 64, 117);">Відправити</button>
+  </div>
+
+
+<!-- Розміщуєм картинку -->
+<div class="ProgrammingWebPage" style="width: 100%; height: 100vh; position: relative; background: #d8e2ec05">
+  <img class="Image1" style="width: 35%; height: 100%; right: 0; top: 0; position: absolute; border: 1px #79726d0e solid" src="picture.png" />
+
+
+  <!-- Розміщуєм блок контенту з текстовою інформацією не на всю ширину веб сторінки, а зліва від картинки -->
+  <div class="TextContent" style="width: 65%; height: 100%; position: absolute; left: 0; top: 0; padding: 20px; background-color: rgba(207, 214, 211, 0.062); margin-top: 45px;">
+    
+    <p dir="ltr" style="text-align: justify; font-style: normal; font-weight: bold; background-color: rgb(207, 214, 211, 0.062); font-size: 1.0em; width: 95%; margin-top: 25px;">
+    DevTools, або інструменти розробника браузера, це набір функціональних інструментів, які вбудовані в браузери для допомоги 
+    розробникам у відлагодженні, аналізі та вдосконаленні веб-додатків.
+    Кожен сучасний браузер, такий як Google Chrome, Mozilla Firefox, або Microsoft Edge, має свої власні DevTools. 
+    </p> 
+
+    <ul style="border: 1px; border-style: solid; border-color: white; padding: 10px;">
+        <li>
+            <a href="#id2">Dev tools браузерів:</a>
+            <ul>
+              
+                <li>
+                  <a href="#id19">Елементи</a>
+                </li>
+                <li>
+                    <a href="#id20">Консоль</a>
+                </li>
+                <li>
+                    <a href="#id21">Джерела</a>
+                </li>
+                <li>
+                    <a href="#id22">Мережа</a>
+                </li>
+                <li>
+                    <a href="#id23">Вкладки Performance та Memory</a>
+                </li>
+                
+    </ul>
+    
+      </li>
+    
+    <h3 id="id19" dir="ltr" style="text-align: center; background-color: rgb(207, 214, 211, 0.062);">Елементи</h3>
+    <p dir="ltr" style="text-align: justify; width: 95%; background-color: rgb(207, 214, 211, 0.062);">Перша і для багатьох випадків основна вкладка інструментів - Elements. Тут розробник може переглянути дерево HTML-елементів і редагувати їхній код «на льоту».</p>
+    <p dir="ltr" style="text-align: justify; width: 95%; background-color: rgb(207, 214, 211, 0.062);">Щоб змінити тег елемента, якийсь його атрибут або текстовий вміст, двічі клацніть цей тег, атрибут або текст, уведіть нове значення й натисніть Enter.</p>
+    <p dir="ltr" style="text-align: justify; width: 95%; background-color: rgb(207, 214, 211, 0.062);">Проте велику частину функціоналу містить і права частина вкладки Elements, що, своєю чергою, містить кілька панелей-підвкладок. На панелі Styles можна переглянути всі присвоєні виділеному елементу стилі.</p>
+    <p dir="ltr" style="text-align: justify; width: 95%;background-color: rgb(207, 214, 211, 0.062);">Стилі можна швидко відключати й підключати знову, натискаючи прапорець ліворуч від конкретної властивості.</p>
+    <p dir="ltr" style="text-align: justify; width: 95%; background-color: rgb(207, 214, 211, 0.062);">У наступній підвкладці — Event Listeners — браузер відображає всі обробники подій, навішені на поточний виділений елемент. Якщо ж встановити прапорець Ancestors, то до цього списку 
+      додадуться ще й обробники, навішені на будь-який елемент вище в дереві: саме вони потенційно можуть відреагувати на подію, пов’язану з поточним елементом. Для кожного обробника вказано місце в коді, де його оголошено. Крім того, 
+      є змога негайно видалити цей обробник, щоб перевірити, чи не він спричиняє певний баг.</p>
+      <img class="Image5" style="position: absolute; max-width: 45%;" src="https://s.dou.ua/storage-files/image31.gif"/>      
+  
+     
+    <h3 id="id20" dir="ltr" style="text-align: center; width: 100%; margin-top: 410px;">Консоль</h3> 
+    <p dir="ltr" style="text-align: justify;">Основна функція цієї вкладки — інтерактивна взаємодія з браузером через введення в консоль JavaScript-команд й отримання у відповідь результатів, які вони повертають. Скажімо, у такий спосіб можна 
+      потестувати роботу певного фрагмента коду, просто вставивши його в консоль і натиснувши Enter.</p>
+    <p dir="ltr" style="text-align: justify;">Інший сценарій використання — запуск глобально оголошеної функції або того чи іншого методу маніпуляції DOM. Наприклад, щоб додати в елемент footer текст, можна набрати й запустити в консолі команду 
+      document.getElementsByTagName('footer')[0].append('Bye!'); якщо ж футер і так вибрано у вкладці Elements, то досить написати $0.append('Bye!'), бо Chrome автоматично підставить у змінну з назвою $0 поточний елемент.</p>
+    <p dir="ltr" style="text-align: justify;">При натисканні на трикутник (кнопка зліва), відкриється панель, що дасть змогу відфільтрувати повідомлення в консолі — наприклад, показати лише помилки або попередження.</p> 
+    <p dir="ltr" style="text-align: justify;">Поля, розміщені праворуч, теж призначені для фільтрування повідомлень у консолі. За допомогою останньої кнопки відкриваємо мініпанель з додатковими налаштуваннями консолі, такими як заборона очищувати 
+      консоль під час переходу на іншу сторінку.</p> 
+  
+
+    <h3 id="id21" dir="ltr" style="text-align: center; width: 100%; margin-top: 25px;">Джерела</h3>
+    <p dir="ltr" style="text-align: justify;">У цій вкладці можна переглянути, відкрити й навіть редагувати вихідні файли сайту. Для цього в лівій частині вкладки, на панелі Page, виберіть потрібний файл. Унесені в нього зміни будуть застосовані до 
+    сторінки в режимі реального часу: наприклад, якщо ви змінюєте стиль, то сторінка миттєво оновлює свій вигляд, а якщо змінюєте код, який виконує деяка кнопка, то після наступного натискання на цю кнопку браузер запустить уже нову версію коду.
+    Щоправда, після перезавантаження сторінки всі внесені у файли зміни будуть втрачені.</p>  
+    <p dir="ltr" style="text-align: justify;">Найголовніше, що пропонує вкладка Sources — це можливість зневаджувати код. Спершу для цього потрібно зупинити виконання коду в тому місці, яке вас цікавить і яке ви хочете дослідити. Найпрямолінійніший 
+      спосіб виставити такий breakpoint — відкрити потрібний файл, знайти потрібний рядок і клацнути на його номері.</p>
+    <p dir="ltr" style="text-align: justify;">Тоді номер підсвітиться синім кольором, а, коли виконання дійде до вибраного рядка, браузер призупинить виконання JS і підсвітить синім увесь рядок. Навіть якщо вихідний код сторінки мініфіковано й склеєно
+       в один суцільний рядок, Chrome може його миттєво «розмініфікувати» й акуратно відформатувати. Для цього потрібно клацнути на спеціальній кнопці в нижній частині вкладки: там зображено фігурні дужки.</p> 
+    <div style="position: relative;">
+  <img class="Image5" style="max-width: 39%; position: absolute; right: 0;" src="https://s.dou.ua/storage-files/image25_48u0TuB.png"/>
+   </div>
+   
+   <div class="dev tools" style="width: 155%; margin-top: 360px;"> 
+   <h3 id="id22" dir="ltr" style="text-align: center; width: 100%; margin-top: 270px;">Мережа</h3>
+    <p dir="ltr" style="text-align: justify; width: 100%;">Тут відображено список усіх завантажених сторінкою ресурсів, а також діагностична інформація щодо кожного з них. У самій таблиці наявні зазвичай ім’я завантажуваного ресурсу, його тип, код статусу, 
+      повернений сервером, кількість трафіку, використаного на завантаження ресурсу, і час завантаження. Список можна відсортувати, клацнувши на заголовку відповідного стовпця таблиці.</p>  
+    <p dir="ltr" style="text-align: justify; width: 100%;">Якщо правою кнопкою миші клацнути на елементі у списку завантажень, то можна скопіювати його адресу, експортувати в різні формати (зокрема, для використання в Postman) і заблокувати завантаження цього 
+      URL у майбутньому. Натомість клацання по завантаженню лівою кнопкою відкриє панель з великою кількістю додаткової інформації про нього.</p>
+    <p dir="ltr" style="text-align: justify; width: 100%;">У загальному випадку це заголовки (headers) і параметри запиту, текст відповіді сервера (панель Response) та його перегляд у відформатованому вигляді (Preview), передані на сервер і назад cookies, 
+      детальний таймінг завантаження, а також, у разі сокетного з’єднання, інформація про передані в обидва боки повідомлення (панель Frames).</p> 
+    <div style="position: relative;">
+    <img class="Image5" style="max-width: 28%; position: absolute; left: 45%; transform: translateX(-50%); margin-top: 31px;" src="https://s.dou.ua/storage-files/image30_T6eqxTU.png"/>
+   </div>
+   
+
+  <h3 id="id23" dir="ltr" style="text-align: center; width: 155%; margin-top: 470px; margin-right: 160px; position: relative; right: 495px;">Вкладки Performance та Memory</h3>
+    <p dir="ltr" style="text-align: justify;">За допомогою вкладки Performance можна профілювати сторінку, тобто відстежити, які чинники й ділянки коду роблять її повільною. Для запуску профілювання клацніть на одній з двох перших кнопок на панелі 
+      інструментів у верхній частині вкладки.</p>  
+    <p dir="ltr" style="text-align: justify;">Перша кнопка безпосередньо запускає збір інформації; зупинити його можна, натиснувши на кнопку Stop, що з’явиться. Натомість друга кнопка спершу перезавантажує сторінку, а потім автоматично починає збір 
+      інформації. Він припиняється, коли сторінку повністю завантажено.</p>
+    <p dir="ltr" style="text-align: justify;">Наступні кнопки на панелі дають змогу очистити, імпортувати й експортувати зібраний профіль, а також вибрати із зібраних/завантажених профілів той, з яким ви хочете працювати.</p>  
+       
+    <p dir="ltr" style="text-align: justify;">Вкладка "Memory" в інструментах розробника веб-браузерах призначена для відстеження використання пам'яті веб-сторінкою. Основні функції та способи використання включають:
+
+    <br> 1) Моніторинг витрат пам'яті: Вкладка Memory дозволяє вам переглядати та аналізувати витрати пам'яті вашого веб-додатка в реальному часі;
+    <br> 2) Аналіз використання пам'яті: За допомогою різних інструментів та графіків, ви можете аналізувати використання пам'яті в різних етапах життєвого циклу вашого додатка;
+    <br> 3) Спостереження за об'єктами в пам'яті: Вкладка дозволяє вам детально розглядати об'єкти, які знаходяться в пам'яті, і вивчати їхню структуру та взаємодію.</p>    
+    <div style="position: relative;">
+      <img class="Image5" style="max-width: 35%; position: absolute; right: 0;" src="https://s.dou.ua/storage-files/image3_BTdX0Y9.png"/>
+   </div> 
+   
+  </div>  
+</div>  
+
+ <!-- Форма для автентифікації -->
+ <div class="auth-form" style="width: 100%; height: 55vh; position: absolute; background-color: rgbrgb(61, 78, 70); right: 0; margin-top: 950px;">
+  <label for="firstName" style="font-style: normal; font-weight: bold; color: rgb(43, 43, 87); font-size: 1.15em;">Ім'я:</label>
+  <input type="text" id="firstName" required oninput="validateInput(this)"><span id="firstNameError" class="error-message"></span>
+
+  <label for="lastName" style="font-style: normal; font-weight: bold; color: rgb(43, 43, 87); font-size: 1.15em;">Прізвище:</label>
+  <input type="text" id="lastName" required oninput="validateInput(this)"><span id="lastNameError" class="error-message"></span>
+
+  <label for="email" style="font-style: normal; font-weight: bold; color: rgb(43, 43, 87); font-size: 1.15em;">Електронна пошта:</label>
+  <input type="email" id="email" required oninput="validateInput(this)"><span id="emailError" class="error-message"></span>
+
+  <label for="login" style="font-style: normal; font-weight: bold; color: rgb(43, 43, 87); font-size: 1.15em;">Логін:</label>
+  <input type="text" id="login" required oninput="validateInput(this)"><span id="loginError" class="error-message"></span>
+
+  <label for="password" style="font-style: normal; font-weight: bold; color: rgb(61, 78, 70); font-size: 1.15em;">Пароль:</label>
+  <input type="password" id="password" required oninput="validateInput(this)"><span id="passwordError" class="error-message"></span>
+
+  <button onclick="submitForm()" style="font-style: normal; font-weight: bold; color: rgb(207, 214, 211, 0.062); font-size: 1.15em;">Увійти</button>
+</div>
+
+<div class="f-panzoom" id="myPanzoom" style="max-width: 79%; margin-top: 1385px; float: right;">
+  <div class="f-custom-controls top-right">
+    <button data-panzoom-action="toggleFS" class="toggleFullscreen">
+      <svg
+           xmlns="http://www.w3.org/2000/svg"
+           viewBox="0 0 24 24"
+           stroke="currentColor"
+           fill="none"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           >
+        <g>
+          <path d="M14.5 9.5 21 3m0 0h-6m6 0v6M3 21l6.5-6.5M3 21v-6m0 6h6" />
+        </g>
+        <g>
+          <path d="m14 10 7-7m-7 7h6m-6 0V4M3 21l7-7m0 0v6m0-6H4" />
+        </g>
+      </svg>
+    </button>
+  </div>
+
+<div class="f-custom-controls bottom-right">
+    <button data-panzoom-change='{"angle": 90}'>
+      <svg
+           xmlns="http://www.w3.org/2000/svg"
+           viewBox="0 0 24 24"
+           stroke="currentColor"
+           fill="none"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           >
+        <path
+              d="M9 4.55a8 8 0 0 1 6 14.9M15 15v5h5M5.63 7.16v.01M4.06 11v.01M4.63 15.1v.01M7.16 18.37v.01M11 19.94v.01"
+              />
+      </svg>
+    </button>
+
+    <button data-panzoom-action="zoomIn">
+      <svg
+           xmlns="http://www.w3.org/2000/svg"
+           viewBox="0 0 24 24"
+           stroke="currentColor"
+           fill="none"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           >
+        <path d="M12 5v14M5 12h14" />
+      </svg>
+    </button>
+
+    <button data-panzoom-action="zoomOut">
+      <svg
+           xmlns="http://www.w3.org/2000/svg"
+           viewBox="0 0 24 24"
+           stroke-width="1.5"
+           stroke="currentColor"
+           fill="none"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           >
+        <path d="M5 12h14" />
+      </svg>
+    </button>
+  </div>
+  <img class="f-panzoom__content" src="https://images.unsplash.com/photo-1597239450996-ea7c2c564412?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fHByb2dyYW1taW5nfGVufDB8fDB8fHww"/>
+</div>
+</div>
+
+</div>
+
+
+<section class="Postman" style="margin-top: 3710px; background-color: rgb(61, 78, 70);"></section>
+<div>
+   <p dir="ltr" style="text-align: justify; font-style: normal; font-weight: bold; color:  rgb(43, 43, 87); font-size: 1.15em;">
+    Postman – це HTTP-клієнт (прорама) для тестування взаємодії з веб сервером, коли запити відправляють не користувачі з клавіатури та через інтерфейс доступний їм в браузері, а тестувальник 
+    або розробник веб додатку. </p>  
+    
+     <ul style="border: 1px; border-style: solid; border-color: white; padding: 10px;">
+        <li>
+            <a href="#id24">Використання застосунку Postman для тестування взаємодії з веб сервером:</a>
+            <ul>
+              
+                <li>
+                    <a href="#id25">Application programming interface</a>
+                </li>
+                <li>
+                    <a href="#id26">Поняття REST API</a>
+                </li>
+                <li>
+                    <a href="#id27">Інтеграційне тестування клієнт - сервер</a>
+                </li>
+                <li>
+                    <a href="#id28">Використання Postman для відправки запитів та перевірки коректності отриманих відповідей</a>
+                </li>
+                
+    </ul>
+    </li>
+    
+    <h3 id="id25" dir="ltr" style="text-align: center;">Application programming interface</h3>
+    <p dir="ltr" style="text-align: justify;">API (Application Programming Interface) забезпечує взаємодію між двома системами. API дозволяє надсилати інформацію безпосередньо з однієї програми до іншої, 
+      обминаючи інтерфейс взаємодії з користувачем.</p>
+    <p dir="ltr" style="text-align: justify;">Це автономна функція, яка не залежить від інших служб. При натисканні на кнопку в інтерфейсі, запускаються внутрішні функції, щоб передати і отримати інформацію. 
+      API приймає запит, передає інформацію системі, обробляє її та повертає відповідь.</p>
+      <p dir="ltr" style="text-align: justify;">Щоб між програмами виникала взаємодія, їх API потрібно побудувати за єдиним стандартом.</p>
+      <div>
+    <h3 id="id26" dir="ltr" style="text-align: center;">Поняття REST API</h3>
+    <p dir="ltr" style="text-align: justify;">Одним з них є  REST (Representational State Transfer) описує принципи взаємодії клієнта і сервера. В архітектурі REST клієнти надсилають запити на отримання або 
+      модифікацію ресурсів, а сервери надсилають відповіді на ці запити.</p>
+    <p dir="ltr" style="text-align: justify;">Всього існує 9 основних типів запитів до веб сервера, але найбільш часто застосовуються запити які відповідають концепції CRUD : create, read, update, delete.</p>
+    <p dir="ltr" style="text-align: justify;">Відповідно є чотири  основних дієслова HTTP, які використовуються в запитах для взаємодії з ресурсами в системі REST:
+      <br> 1) GET – отримати певний ресурс (за ідентифікатором) або набір ресурсів;
+      <br> 2) POST – створити новий ресурс;
+      <br> 3)	PUT – оновити певний ресурс (за ідентифікатором);
+      <br> 4) DELETE – видалити певний ресурс за ідентифікатором.
+      </p>
+      <div style="position: relative;">
+        <img class="Image5" style="max-width: 18%; position: absolute; left: 25%; transform: translateX(-50%); margin-top: 0px; margin-bottom: 110;" src="https://training.qatestlab.com/wp-content/uploads/2021/11/%D0%A1%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B7%D0%B0%D0%BF%D0%B8%D1%82%D1%83-HTTP-Request.png"/>
+       </div>
+      </div>
+     <br>
+    <h3 id="id27" dir="ltr" style="text-align: center; margin-top: 900;">Інтеграційне тестування клієнт - сервер</h3>
+    <p dir="ltr" style="text-align: justify;">API також має тестуватись. Тестування API відноситься до інтеграційного тестування, а значить в ході нього можна відслідкувати помилки взаємодії між модулями системи 
+      або між системами.</p>
+    <p dir="ltr" style="text-align: justify;">У тестуванні API замість використання стандартних запитів/висновків (використовуючи клавіатуру та ін.) використовується програмне забезпечення для відправки запитів API, 
+      отримання та запису відповіді системи.</p>
+      
+   <h3 id="id28" dir="ltr" style="text-align: center; margin-top: 990;">Використання Postman для відправки запитів та перевірки коректності отриманих відповідей</h3>
+    <p dir="ltr" style="text-align: justify;">Postman – це HTTP-клієнт для тестування API. Користуючись Postman можливо:
+      <br> 1)	Складати і відправляти HTTP-запити;
+      <br> 2)	Змінювати параметри запитів;
+      <br> 3)	Додавати до виклику API контрольні точки;
+      </p>
+    <p dir="ltr" style="text-align: justify;">Для роботи із серверами програма Postman використовує протокол HTTP. Тестувальник відправляє тестові запити від клієнта на сервер та отримує відповідь, чи є помилка в 
+    роботі API.</p>
+    <p dir="ltr" style="text-align: justify;">Тестування API стає все більш затребуваним. За допомогою тестування API можна передбачити як буде реагувати система на реального користувача, виконати одні й ті ж тести 
+      з різноманітними наборами вхідних даних, зробити будь-які допоміжні дії зі створення тестових даних та ситуацій і таким чином пришвидшити тестування та зробити його більш якісним.
+
+      <br> Postman доступний у вигляді додатку для ОС Windows, macOS та Linux, а також в веб-версії https://www.postman.com/.
+      </p>
+
+              <img class="Image5" style="max-width: 28%; position: absolute; left: 45%; transform: translateX(-50%); margin-top: 26px;" src="https://training.qatestlab.com/wp-content/uploads/2021/11/%D0%92%D1%96%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D1%84%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%BD%D0%B8%D1%85-%D0%B4%D0%B0%D0%BD%D0%B8%D1%85-%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D1%82%D1%83%D0%B2%D0%B0%D1%87%D0%B0.png"/>
+       </div>
+    </section>
+
+    <section class="Dev Ops" style="margin-top: 370px; background-color: rgb(61, 78, 70);"></section>
+ <div>
+    <h2 style="text-align: center;">TCP Network Model</h2>
+  <label><input type="radio" name="tcp-level" value="1"> фізичний рівень</label><br>
+  <label><input type="radio" name="tcp-level" value="2"> канальний рівень</label><br>
+  <label><input type="radio" name="tcp-level" value="3"> мережевий рівень</label><br>
+  <label><input type="radio" name="tcp-level" value="4"> транспортний рівень</label><br>
+  <label><input type="radio" name="tcp-level" value="5"> рівень застосунку</label><br>
+
+  <!-- Modal -->
+ <div id="myModal" class="modal" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
+  <!-- Modal content -->
+  <div class="modal-content" style="background-color: #ece6e6; margin: 5% auto; padding: 20px; border: 1px solid #888; width: 80%;">
+    <span class="close" style="color: #0e0d0d; float: right; font-size: 28px; font-weight: bold;">&times;</span>
+    <p id="modal-description" style="color: black; font-weight: bold; font-style: italic;"></p>
+  </div>
+   </div>
+   </div>
+ 
+<div>
+     
+
+   <p dir="ltr" style="text-align: justify; font-style: normal; font-weight: bold; color:  rgb(43, 43, 87); font-size: 1.15em;">
+    DevOps - це методологія розробки програмного забезпечення, що поєднує розробку (Development) та операції (Operations) в єдиний, автоматизований процес. Вона ставить перед собою завдання зменшити час між внесенням змін у програмний код та їх впровадженням у 
+    виробниче середовище, забезпечуючи при цьому стабільність, високу якість та швидкість розгортання програм. Термін "DevOps" з"явився у 2009 році завдяки серії зустрічей "DevOps Days", які спочатку відбулись
+    в Бельгії, а потім поширились на інші країни. 
+  </p>  
+    
+     <ul style="border: 1px; border-style: solid; border-color: white; padding: 10px;">
+        <li>
+            <a href="#id24">використання технологій DevOps для перенесення програмного забезпечення, реєстрів та даних у хмарне середовище, а також їх взаємодію з мережевими технологіями:</a>
+            <ul>
+              
+                <li>
+                    <a href="#id29">Контейнеризація з Docker</a>
+                </li>
+                <li>
+                    <a href="#id30">Управління контейнерами з Kubernetes</a>
+                </li>
+                <li>
+                    <a href="#id31">NGINX як балансувальник навантаження та веб-сервер</a>
+                </li>
+                <li>
+                    <a href="#id32">Мережеві технології та безпека мереж</a>
+                </li>
+                <li>
+                    <a href="#id33">Програми для моніторингу та аналізу мережі</a>
+                </li>
+                <li>
+                    <a href="#id34">Використання зовнішніх пристроїв в процесі моніторингу та аналізу мережі</a>
+                </li>   
+                
+        </ul>
+    </li>
+
+             <h3 id="id29" dir="ltr" style="text-align: center;">Контейнеризація з Docker</h3>
+    <p dir="ltr" style="text-align: justify;">Docker - це платформа для розробки, доставки та запуску програм у віртуальних контейнерах. Контейнери дозволяють ізолювати програмне 
+      забезпечення та його залежності від основної операційної системи, що робить розгортання та масштабування додатків простішими та швидшими.</p>
+     
+    <p dir="ltr" style="text-align: justify;">Контейнеризація з Docker дійсно відіграє ключову роль у перенесенні програмного забезпечення в хмарне середовище.</p>
+      <p dir="ltr" style="text-align: justify;">За словами Девіда Ліндслі, відомого експерта з DevOps, Docker створює "ізольоване середовище, в якому можна запускати програмне забезпечення та всі його залежності, без обтяжливого налаштування віртуальних машин". 
+        Це дозволяє розробникам "легко переносити додатки з одного середовища в інше", що робить їх "ідеальними для роботи у хмарних середовищах" (Lindblom, 2020). Він також зауважує, що Docker забезпечує "повну ізоляцію, надійність та ефективність" у хмарних 
+        середовищах (Lindblom, 2020).</p>
+  
+        <div style="position: relative;">
+          <img class="Image5" style="max-width: 18%; position: absolute; left: 55%; transform: translateX(-50%); margin-top: 265px; fill-opacity: 25;" src="https://media.istockphoto.com/id/1483016813/uk/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D1%96-%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F/%D0%B0%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%82%D0%BD%D0%B8%D0%B9-%D1%88%D0%B5%D1%81%D1%82%D0%B8%D0%BA%D1%83%D1%82%D0%BD%D0%B8%D0%B9-%D1%84%D0%BE%D0%BD-%D0%B7-%D0%B5%D1%84%D0%B5%D0%BA%D1%82%D0%BE%D0%BC-%D1%81%D0%BF%D0%BB%D0%B5%D1%82%D1%96%D0%BD%D0%BD%D1%8F-%D1%96-%D0%B1%D1%83%D0%BA%D0%B2%D0%B0%D0%BC%D0%B8-%D0%B4%D0%BB%D1%8F-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D1%85.jpg?s=612x612&w=0&k=20&c=yDebhlQ2f1ib-ZKRxCBMuzEmAho7sX9EIyM5_YGLXuY="/>
+          
+         </div>
+        
+        
+         <div style="position: relative; margin-bottom: 130px;">
+        <h3 id="id30" dir="ltr" style="text-align: center;">Управління контейнерами з Kubernetes.</h3>
+    <p dir="ltr" style="text-align: justify;">Kubernetes надає масштабовану та автоматизовану систему для керування контейнерами у хмарному середовищі. Він дозволяє автоматично масштабувати, керувати та відновлювати додатки в разі відмови.</p>
+    <p dir="ltr" style="text-align: justify;">Kubernetes також надає можливість балансування навантаження між різними екземплярами додатків, що покращує доступність та швидкодію.</p>
+      <p dir="ltr" style="text-align: justify;">Кубернетес, за словами Ендрю Дейвісона, генерального директора компанії "Kubernetes Academy", "дозволяє вам керувати групами контейнерів та забезпечувати їхню високу доступність, автоматично масштабувати та 
+        управляти навантаженнями" (Davidson, 2021). Він додає, що Kubernetes "спрощує керування додатками у хмарному середовищі та робить їх більш гнучкими та швидкими" (Davidson, 2021).</p>
+      </div>
+        <div style="position: relative;">
+          <img class="Image5" style="max-width: 18%; position: absolute; left: 35%; transform: translateX(-50%); margin-top: 830px; margin-bottom: 0;" src="https://media.istockphoto.com/id/1465436988/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%B3%D0%BD%D1%83%D1%87%D0%BA%D0%B0-%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BA%D0%B0-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B7%D0%B0%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B0%D0%B1%D0%BE-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8-%D0%B7-%D0%B2%D0%B8%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%8F%D0%BC-%D0%BA%D0%B0%D0%BD%D0%B1%D0%B0%D0%BD-%D0%B0%D0%B1%D0%BE.jpg?s=612x612&w=0&k=20&c=YRnSvvFCFO8H9uNyp_3Eqmtj_8BLZMXvthexlZMSvEk="/>
+         </div>
+
+        <h3 id="id31" dir="ltr" style="text-align: center; margin-top: 195px;">NGINX як балансувальник навантаження та веб-сервер.</h3>
+    <p dir="ltr" style="text-align: justify;">NGINX може бути використаний як балансувальник навантаження для розподілу трафіку між різними екземплярами додатків у хмарі.</p>
+    <p dir="ltr" style="text-align: justify;">Крім того, він може функціонувати як веб-сервер для обробки запитів користувачів та доставки статичного та динамічного контенту. NGINX допомагає підвищити швидкість та доступність додатків у хмарі.</p>
+      
+      <h3 id="id32" dir="ltr" style="text-align: center;">Мережеві технології та безпека мереж.</h3>
+      <p dir="ltr" style="text-align: justify;">Мережеві технології, такі як мережеві протоколи та безпека мереж, є критичними для "клієнт-серверної" архітектури.</p>
+      <p dir="ltr" style="text-align: justify;">Мережеві технології, такі як VPN, Firewalls, Load Balancers та моніторингові інструменти, відіграють ключову роль у DevOps, забезпечуючи 
+        надійність, швидкість та безпеку впровадження програмного забезпечення.
+
+        Наприклад, використання VPN дозволяє забезпечити захищену та приватну мережу для зв'язку між розробниками та віддаленими серверами, що зменшує ризик несанкціонованого доступу до даних.
+        
+        Firewalls відповідають за фільтрацію мережевого трафіку, що забезпечує безпеку системи та запобігає несанкціонованому доступу до неї.
+        
+        Load Balancers розподіляють навантаження між серверами, що підвищує продуктивність та доступність системи, забезпечуючи стабільну роботу додатків.</p>
+      <p dir="ltr" style="text-align: justify;"> Моніторингові інструменти, такі як Prometheus або Grafana, забезпечують постійний контроль за мережевими ресурсами та діагностику можливих проблем, що допомагає у вчасному виявленні та вирішенні проблем з
+           мережею.</p>
+          
+       <p dir="ltr" style="text-align: justify;"></p>CI/CD є поширеною DevOps-практикою. CI (Continuous Integration) — це неперервна інтеграція, а CD (Continuous Delivery) — неперервна доставка. Основна мета CI/CD — як раз забезпечити послідовну й 
+       автоматизовану збірку, упаковування і тестування застосунків. Завдяки цьому розробники можуть більше зосередитись на якості коду та безпеці продукту. Ідея CI/CD Pipeline об’єднує це все в один великий конвеєр. Розробники працюють над кодом та 
+       роблять комміти. Далі CI-сервер збирає проєкт і проганяє інтеграційні та юніт-тести. А після рев’ю все вирушає на Stage і Prod. За автоматизацію відповідає Jenkins. Доставка продукту на сервери проходить безперервно та з мінімальними зусиллями
+       з боку розробників.</p>
+       <p dir="ltr" style="text-align: justify;"></p>Jenkins — це сервер, який підтримує концепцію Continuous Integration. Він написаний на Java, але працює з будь-якими мовами. Ви можете писати код хоч на Python,
+        хоч на C# — для Jenkins це неважливо. У будь-якому разі інструмент збере проєкт так, як ви йому скажете і зробить деплой на сервер, який ви прив’язали до Jenkins.</p> 
+        
+        <div style="position: relative;">
+          <img class="Image5" style="max-width: 18%; position: absolute; left: 55%; transform: translateX(-50%); margin-top: 725px; margin-bottom: 110;" src="https://media.istockphoto.com/id/1460170537/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%86%D1%96%D1%8F-%D1%85%D0%BC%D0%B0%D1%80%D0%BD%D0%B8%D1%85-%D0%BE%D0%B1%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D1%8C-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BD%D0%B5-%D0%B7%D0%B0%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8F-%D1%8F%D0%BA-%D0%BF%D0%BE%D1%81%D0%BB%D1%83%D0%B3%D0%B0-saas-%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B0-%D0%BC%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B7%D0%B2%D1%8F%D0%B7%D0%BA%D1%83.jpg?s=612x612&w=0&k=20&c=13HfHsVQ4z5fQHMoVF3LJtqhI97Hb40w2t1L3lMaykk="/>
+         </div>
+
+        
+
+     <h3 id="id33" dir="ltr" style="text-align: center; margin-top: 255px;">Програми для моніторингу та аналізу мережі</h3>   
+    <p dir="ltr" style="text-align: justify;">Nmap - це інструмент для сканування мережі, який дозволяє визначати активні хости, відкриті порти та інші параметри мережевої безпеки. Використовується для виявлення потенційних уразливостей та збору інформації про мережеві 
+      пристрої.</p>
+    <p dir="ltr" style="text-align: justify;">Функціональність:
+
+      - Сканування портів: Визначає, які порти відкриті на конкретному пристрої.
+      - Опції OS detection: Визначає операційну систему пристрою.
+      - Сканування уразливостей: Використовується для знаходження потенційних проблем безпеки на хостах.
+      - Сканування мережевих служб: Допомагає виявити, які служби запущені на конкретних портах.</p>
+      <p dir="ltr" style="text-align: justify;">Wireshark - це інструмент аналізу мережевого трафіку, який дозволяє перехоплювати та детально аналізувати пакети даних, що проходять через мережу. Використовується для виявлення проблем з мережевим з'єднанням, аналізу безпеки та 
+        налагодження мережевих протоколів.</p>
+      <p dir="ltr" style="text-align: justify;">Функціональність:
+
+       - Захоплення пакетів: Запис та аналіз пакетів даних у реальному часі.
+       - Фільтрація трафіку: Можливість вибору конкретних типів пакетів для аналізу.
+       - Детальний аналіз: Розширений перегляд структури та вмісту кожного пакету.
+       - Протокольний аналіз: Розпізнавання та виведення різних мережевих протоколів.</p>
+    
+       <p dir="ltr" style="text-align: justify;"></p>Аналізуйте пакети для виявлення аномалій, перехоплення паролів чи виявлення проблем мережевого з'єднання.</p>
+       <p dir="ltr" style="text-align: justify;">Використання nmap та Wireshark в комплексі дозволяє ефективно вивчати мережеву інфраструктуру, забезпечуючи безпеку та високий рівень функціональності.</p>
+    </ul>
+     
+    <h3 id="id34" dir="ltr" style="text-align: center; margin-top: 205px;">Використання зовнішніх пристроїв в процесі моніторингу та аналізу мережі</h3>
+    <p dir="ltr" style="text-align: justify;">Тестери пропускної здатності, такі як ті, що виробляються компаніями Fluke та Spirent, є фізичними пристроями, а не програмними рішеннями чи вбудованими технологіями,
+       як NetFlow чи sFlow.</p>
+    <p dir="ltr" style="text-align: justify;">Основні характеристики тестерів пропускної здатності:
+
+      
+      - Тестери пропускної здатності представляють собою фізичні пристрої, які можна підключити до мережі.
+            
+                
+      - Тестери вимірюють пропускну здатність, затримку, втрати пакетів та інші параметри під час передачі трафіку.
+            
+      - Тестери можуть бути використані для тестування різних мережевих пристроїв, включаючи комутатори, маршрутизатори, файерволи та інші. Або наприклад тестер SmartClass Ethernet.</p>
+      <p dir="ltr" style="text-align: justify;"> Тезисно про NetFlow та sFlow:
+
+        NetFlow:
+        
+        Вбудована технологія (чіп,процесор) в мережеве обладнання (маршрутизатори, комутатори), яка використовується для моніторингу та аналізу трафіку на рівні пристроїв.
+        Збирає інформацію про трафік, включаючи джерело, призначення, протоколи та об'єми передачі даних.
+        Відправляє зібрані дані на колектор для подальшого аналізу та візуалізації. Складається з наступних логічних модулів: модуль збору даних (Data Collection Module); модуль агрегації (Aggregation Module)
+        модуль відправки (Transmission Module).</p>
+        <p dir="ltr" style="text-align: justify;">    </p>
+             
+      </section>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/panzoom/panzoom.umd.js"></script>
+<script>
+  const container = document.getElementById("myPanzoom");
+
+  new Panzoom(container, {
+    //
+  });
+</script>
+
+<script src="script.js"></script> <!-- Підключення файлу скрипту -->
+<script src="script1.js"></script> <!-- Підключення файлу скрипту -->
+<script src="modal.js"></script> <!-- Підключення файлу скрипту -->
+<script src="scriptreact.js"></script><!-- Підключення файлу скрипту -->
+<script src="devops.js"></script><!-- Підключення файлу скрипту -->
+</body>
+</html>
