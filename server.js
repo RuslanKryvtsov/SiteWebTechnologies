@@ -1,9 +1,14 @@
 import express from 'express';
 //const express = require('express');
-const bodyParser = require('body-parser');
-const path = require('path');
-const sqlite3 = require('sqlite3').verbose();
-const fs = require('fs');  
+//const bodyParser = require('body-parser');
+//const path = require('path');
+//const sqlite3 = require('sqlite3').verbose();
+//const fs = require('fs'); 
+
+import bodyParser from 'body-parser';
+import path from 'path';
+import sqlite3 from 'sqlite3';
+import fs from 'fs';
 
 const app = express();
 const port = 3000;
